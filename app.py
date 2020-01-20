@@ -5,19 +5,27 @@ app = Flask(__name__)
 
 
 # routes 
+
+# signin
 @app.route('/')
 def home():
 	return render_template("home.html")
 
 
-@app.route('/signup')
-def home():
-	return render_template("signup.html")
 
+@app.route('/signup', methods=['GET', 'POST'])
+def signup():
+		if request.method == 'GET':
+			return render_template('signup.html')
+		else:
+			name = request.form['user_name']
+			year = request.form['user_year']
+			add_user(name,year)
+			return redirect(url_for('home'))
 
-# @app.route('/body')
-# def about():
-# 	return render_template("body.html")
+@app.route('/body')
+def about():
+	return render_template("body.html")
 
 
 # //////////////////////
