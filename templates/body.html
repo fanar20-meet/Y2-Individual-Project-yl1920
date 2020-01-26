@@ -1,271 +1,111 @@
-
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Enfatica - CSS Winner</title>
-<meta name="description" content="No description available">
-<meta name="keywords" content="Enfatica, website awards, css awards, web awards, css gallery, website design inspirations, web design award gallery, website awards showcase, web design trends">
-<meta name="author" content="CSS Winner">
-<link rel="stylesheet" media="screen" type="text/css" href="https://cdn.csswinner.com/css/layout.css">
-<link rel="shortcut icon" href="https://cdn.csswinner.com/images/favicon.ico" type="image/x-icon">
-<link rel="icon" type="image/png" href="https://cdn.csswinner.com/images/favicon.png">
-<link href="https://cdn.csswinner.com/images/touch-icon-apple.png" rel="apple-touch-icon-precomposed">
-<link rel="icon" type="image/png" href="https://cdn.csswinner.com/images/android-chrome-192x192.png" sizes="192x192">
-<link rel="mask-icon" sizes="any" href="https://cdn.csswinner.com/images/mask-icon.svg">
-<script type="text/javascript" async="" src="https://ssl.google-analytics.com/ga.js"></script><script type="text/javascript" async="" src="//csswinner.disqus.com/embed.js"></script><script async="" type="text/javascript" src="//csswinner.disqus.com/count.js"></script><script type="text/javascript" async="" src="https://s3.buysellads.com/ac/bsa.js"></script><link rel="prefetch" as="style" href="https://c.disquscdn.com/next/embed/styles/lounge.15d8f2a22cfa6b9f96345c682b01a08f.css"><link rel="prefetch" as="script" href="https://c.disquscdn.com/next/embed/common.bundle.b3d69807fc8989b3511a4e0bb0652899.js"><link rel="prefetch" as="script" href="https://c.disquscdn.com/next/embed/lounge.bundle.9ff02c113cbccca73e151361d49d7b5b.js"><link rel="prefetch" as="script" href="https://disqus.com/next/config.js"><script src="https://c.disquscdn.com/next/embed/alfalfalfa.0823c767a3bc925f628afd9bed26c958.js" async="" charset="UTF-8"></script></head>
-
+<!DOCTYPE html>
+<html lang="en">
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
+.w3-bar,h1,button {font-family: "Montserrat", sans-serif}
+.fa-heartbeat , .fa-user-md {font-size:200px}
+</style>
 <body>
-<div class="search">
-  <div class="search-wrapper">
-    <div class="close-s"></div>
-    <div class="s-align">
-      <form id="search" name="search" method="post" action="https://www.csswinner.com/searchaction">
-        <input autofocus="" name="search_cssw" type="text" id="search_cssw" placeholder="Search Websites..." value="">
-        <button type="submit" name="submit" class="search-submit"></button>
-        <div class="s-filter">
-          <div class="s-f">
-            <label class="s-f">
-              <input type="radio" name="searchcategory" value="1">
-              <span class="s-check"></span> Profile </label>
-          </div>
-          <div class="s-f">
-            <label class="s-f">
-              <input type="radio" name="searchcategory" value="2" checked="checked">
-              <span class="s-check"></span> Website </label>
-          </div>
-        </div>
-      </form>
-    </div>
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-red w3-card w3-left-align w3-large">
+    <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-red" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="#" class="w3-bar-item w3-button w3-padding-large w3-white">Home</a>
+    <a href='#' class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">my profile</a>
+    <a href="{{url_for('Immune')}}" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">The Immune system</a>
+    <a href="{{url_for('nervous')}}" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">The nervous system</a>
+    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">The digestive system</a>
+  </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-large">
+    <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 1</a>
+    <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 2</a>
+    <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 3</a>
+    <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 4</a>
   </div>
 </div>
-<!--Begin Header -->
-<header>
-  <div class="header">
-    <div class="h-align">
-      <div class="logo"><a href="https://www.csswinner.com/">CSS Winner</a></div>
-      <a href="https://www.csswinner.com/submitsite" class="submit-site">submit site</a>
-      <div class="h-social">
-        <ul>
-          <li><a href="https://twitter.com/csswinner" class="twitter" target="_blank"></a></li>
-          <li><a href="https://www.facebook.com/csswinners" class="facebook" target="_blank"></a></li>
-          <li><a href="https://www.pinterest.com/csswinner" class="pinterest" target="_blank"></a></li>
-        </ul>
-      </div>
-      <div id="search-button"></div>
-      <nav id="top-menu">
-        <ul>
-          <li><a href="https://www.csswinner.com/" class="">home</a></li>
-          <li><a href="https://www.csswinner.com/winners" class="">awards</a></li>
-          <li><a href="https://www.csswinner.com/nominees" class="">nominees</a></li>
-          <li><a href="https://www.csswinner.com/profiles" class="">profiles</a></li>
-          <li><a href="https://www.csswinner.com/submitsite" class="">submit</a></li>
-          <li><a href="https://www.csswinner.com/blog">blog</a></li>
-        </ul>
-      </nav>
-      <div id="mobnav">
-        <ul>
-          <li><a href="https://www.csswinner.com/">home</a></li>
-          <li><a href="https://www.csswinner.com/winners">awards</a></li>
-          <li><a href="https://www.csswinner.com/nominees">nominees</a></li>
-          <li><a href="https://www.csswinner.com/stars">stars</a></li>
-          <li><a href="https://www.csswinner.com/profiles">profiles</a></li>
-          <li><a href="https://www.csswinner.com/blog">blog</a></li>
-          <li><a href="https://www.csswinner.com/contact">contact us</a></li>
-          <li><a href="https://www.csswinner.com/submitsite">submit site</a></li>
-        </ul>
-        <div class="h-social">
-          <ul>
-            <li><a href="https://twitter.com/csswinner" class="twitter" target="_blank"></a></li>
-            <li><a href="https://www.facebook.com/csswinners" class="facebook" target="_blank"></a></li>
-            <li><a href="https://www.pinterest.com/csswinner" class="pinterest" target="_blank"></a></li>
-          </ul>
-        </div>
-      </div>
-      <div class="menu-icon">
-        <button type="button" class="tcon tcon-menu--xbutterfly" aria-label="toggle menu"> <span class="tcon-menu__lines" aria-hidden="true"></span> </button>
-      </div>
-    </div>
-  </div>
+
+<!-- Header -->
+<header class="w3-container w3-red w3-center" style="padding:128px 16px">
+  <h1 class="w3-margin w3-jumbo">START PAGE</h1>
+  <button class="w3-button w3-black w3-padding-large w3-large w3-margin-top">Get Started</button>
 </header>
-<!--End Header -->
-<!--Middle Wrapper -->
-<div class="wrapper award-site">
-    <section class="award-section">
-  <!-- <span>NULL
-</span>--> 
-    <figure class="big-screen">
-      <div class="efct"> <a href="http://enfatica.com" class="cover" target="_blank" rel="nofollow"><span>Nominee <em>12 Jan 2012</em></span></a> </div>
-      <img src="https://cdn.csswinner.com/images/websites/1203409905.jpg" alt="Enfatica"> </figure>
-    <div class="big-screen-info nominee">
-      <div class="award-label"> <span class="award-icon"></span> <span class="award-type"></span> <span class="award-date"> 12 Jan</span> </div>
-      <span class="web-vote" data-value="1715">1</span>
-      <div class="evaluation-system">
-        <ul>
-          <li>Design <span>--</span></li>
-          <li>Functionality<span>--</span></li>
-          <li>Usability<span>--</span></li>
-          <li>Content<span>--</span></li>
-          <li>Score<span>--</span></li>
-        </ul>
-      </div>
-      <div class="about-website">
-        <div class="block-abt">
-          <h1><a href="http://enfatica.com" target="_blank" rel="nofollow">Enfatica</a></h1>
-          <p> No description available</p>
-        </div>
-      </div>
-      <div class="site-credit">
-        <div class="pro-pic"><img src="https://cdn.csswinner.com/images/site-images/default-profile.jpg" alt="Barrel"></div>
-        <div class="credit-info"> <span class="by">By</span>
-        <h3><a href="http://barrelny.com" target="_blank" rel="nofollow">Barrel</a></h3>
-        <span class="designer-location"><a href="https://www.csswinner.com/profiles/country/united-states">United States</a></span>
-          </div>
-      </div>
+
+<!-- First Grid -->
+<div class="w3-row-padding w3-padding-64 w3-container">
+  <div class="w3-content">
+    <div class="w3-twothird">
+      <h1>Lorem Ipsum</h1>
+      <h5 class="w3-padding-32">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</h5>
+
+      <p class="w3-text-grey">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint
+        occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+        laboris nisi ut aliquip ex ea commodo consequat.</p>
     </div>
-  </section>
-    <ul class="tag-list">
-    </ul><div class="more-dtls">
-    
-    <a href="https://www.csswinner.com/category/Internet/5" class="site-category">Internet</a>
-    <div class="clear"></div>         
-        
-    <!--Pagination -->
-    <div class="paging paging-dtls"> <span class="next">
-            <a href="https://www.csswinner.com/details/cremerie/1714"></a>
-            </span> <span class="previous">
-            <a href="https://www.csswinner.com/details/abbeyschool-scuola-di-lingue-a-torino/1716"></a>
-            </span> 
-      
-      <!--Share -->
-      <div class="share-web"> <span>Share It</span>
-        <ul>
-          <li><a href="https://twitter.com/home?status=Enfatica+%40csswinner+-+https://www.csswinner.com/details/enfatica/1715/" title="Twitter" target="_blank" class="twitter"></a></li>
-          <li><a href="https://www.facebook.com/sharer.php?u=https://www.csswinner.com/details/enfatica/1715" class="facebook" title="Facebook" target="_blank"></a></li>
-          <li><a href="https://pinterest.com/pin/create/button/?url=https://www.csswinner.com/details/enfatica/1715%2F&amp;media=https://cdn.csswinner.com/images/websites/1203409905.jpg&amp;description=Enfatica%20https://www.csswinner.com/details/enfatica/1715" class="pinterest" target="_blank" title="Pinterest"></a></li>
-          <li><a href="https://www.stumbleupon.com/submit?url=https://www.csswinner.com/details/enfatica/1715&amp;title=Enfatica" class="stumble" title="StumbleUpon" target="_blank"></a></li>
-        </ul>
-      </div>
-      <div class="shortcut"><strong>Keyboard Shortcuts: </strong> <span><strong>→</strong> Next</span> <span><strong>←</strong> Previous</span></div>
+
+    <div class="w3-third w3-center">
+      <i class="fa fa-heartbeat w3-padding-64 w3-text-red"></i>
     </div>
   </div>
-  <div id="disqus_thread" style="display:none;"><iframe id="dsq-app4357" name="dsq-app4357" allowtransparency="true" frameborder="0" scrolling="no" tabindex="0" title="Disqus" width="100%" src="https://disqus.com/embed/comments/?base=default&amp;f=csswinner&amp;t_u=https%3A%2F%2Fwww.csswinner.com%2Fdetails%2Fenfatica%2F1715&amp;t_d=Enfatica%20-%20CSS%20Winner&amp;t_t=Enfatica%20-%20CSS%20Winner&amp;s_o=default#version=2b1a30aa7cfa4755fdcf4f0bc16bdd64" horizontalscrolling="no" verticalscrolling="no" style="width: 1px !important; min-width: 100% !important; border: none !important; overflow: hidden !important; height: 0px !important;"></iframe><iframe id="indicator-north" name="indicator-north" allowtransparency="true" frameborder="0" scrolling="no" tabindex="0" title="Disqus" style="width: 0px !important; border: none !important; overflow: hidden !important; top: 0px !important; min-width: 0px !important; max-width: 0px !important; position: fixed !important; z-index: 2147483646 !important; height: 0px !important; min-height: 0px !important; max-height: 0px !important; display: none !important;"></iframe><iframe id="indicator-south" name="indicator-south" allowtransparency="true" frameborder="0" scrolling="no" tabindex="0" title="Disqus" style="width: 0px !important; border: none !important; overflow: hidden !important; bottom: 0px !important; min-width: 0px !important; max-width: 0px !important; position: fixed !important; z-index: 2147483646 !important; height: 0px !important; min-height: 0px !important; max-height: 0px !important; display: none !important;"></iframe></div>
-  <script type="text/javascript">
-        var disqus_shortname = 'csswinner';
-        (function() {
-            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-        })();
-</script>
-  <noscript>
-  Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a>
-  </noscript>
-  <script type="text/javascript">
-    var disqus_shortname = 'csswinner';
-    (function () {
-        var s = document.createElement('script'); s.async = true;
-        s.type = 'text/javascript';
-        s.src = '//' + disqus_shortname + '.disqus.com/count.js';
-        (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
-    }());
-</script> 
-</div>
-<!--Profiles -->
-
-<div class="wrapper dir-other">
-  <section class="dl-w-h">
-    <div class="list-grid"> <a href="https://www.csswinner.com/profiles" class="label">profiles</a>
-      <ul class="dir-list-h">
-<li>
-	<div class="d-l-block-h"><figure><a href="https://www.csswinner.com/profile/rodesk/621"><img src="https://cdn.csswinner.com/images/profiles/2016/aug/165860129.jpg" alt="Rodesk"></a></figure>
-	<div class="dl-info-h"><h3><a href="https://www.csswinner.com/profile/rodesk/621">Rodesk</a></h3>
-	<span class="cntr">Netherlands</span></div></div>
-	</li>
-	<li>
-	<div class="d-l-block-h"><figure><a href="https://www.csswinner.com/profile/visual-lure/722"><img src="https://cdn.csswinner.com/images/profiles/2016/oct/486317154.jpg" alt="Visual Lure"></a></figure>
-	<div class="dl-info-h"><h3><a href="https://www.csswinner.com/profile/visual-lure/722">Visual Lure</a></h3>
-	<span class="cntr">United States</span></div></div>
-	</li>
-	<li>
-	<div class="d-l-block-h"><figure><a href="https://www.csswinner.com/profile/code-resolution/1300"><img src="https://cdn.csswinner.com/images/profiles/2017/oct/31595212.jpg" alt="Code Resolution"></a></figure>
-	<div class="dl-info-h"><h3><a href="https://www.csswinner.com/profile/code-resolution/1300">Code Resolution</a></h3>
-	<span class="cntr">United Kingdom</span></div></div>
-	</li>
-	<li>
-	<div class="d-l-block-h"><figure><a href="https://www.csswinner.com/profile/stronghold/276"><img src="https://cdn.csswinner.com/images/profiles/2016/feb/1196062093.jpg" alt="Stronghold"></a></figure>
-	<div class="dl-info-h"><h3><a href="https://www.csswinner.com/profile/stronghold/276">Stronghold</a></h3>
-	<span class="cntr">Japan</span></div></div>
-	</li>
-	</ul>
-    </div>
-  </section>
 </div>
 
-<!--Ads -->
-<div class="ads-block">
-  <div class="wrapper ads"> <a href="https://www.csswinner.com/contact" class="label">sponsors</a>
-    <section class="ad-section">
-      <h4>sponsors</h4>
-      <div class="ad ad1">
-        <div id="bsap_1270926" class="bsarocks bsap_f7ed4e323c7363fc6844e7d66f7a59e9"></div>
-      </div>
-      <div class="ad ad2">
-        <div id="bsap_1304465" class="bsarocks bsap_f7ed4e323c7363fc6844e7d66f7a59e9"></div>
-      </div>
-      <div class="ad ad3">
-        <div> <a href="https://tracking.maxcdn.com/c/103092/3982/378" target="_blank"><img src="https://cdn.csswinner.com/images/ads/maxcdn-banner.png" alt="" hidden="" style="display: none !important;"></a> </div>
-      </div>
-      <div class="ad ad4">
-        <div> <a href="https://thecssgallerylist.com/" target="_blank"><img src="https://cdn.csswinner.com/images/ads/the-css-gallery-list.png" alt="" hidden="" style="display: none !important;"></a> </div>
-      </div>
-      <div class="ad ad5">
-        <div id="bsap_1306792" class="bsarocks bsap_f7ed4e323c7363fc6844e7d66f7a59e9"></div>
-      </div>
-    </section>
+<!-- Second Grid -->
+<div class="w3-row-padding w3-light-grey w3-padding-64 w3-container">
+  <div class="w3-content">
+    <div class="w3-third w3-center">
+      <i class="fa fa-user-md w3-padding-64 w3-text-red w3-margin-right"></i>
+    </div>
+
+    <div class="w3-twothird">
+      <h1>Lorem Ipsum</h1>
+      <h5 class="w3-padding-32">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</h5>
+
+      <p class="w3-text-grey">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint
+        occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+        laboris nisi ut aliquip ex ea commodo consequat.</p>
+    </div>
   </div>
 </div>
-<!--Footer -->
 
-<footer>
-  <div class="wrapper">
-    <nav> <a href="https://www.csswinner.com/about">About Us</a><span>•</span> <a href="https://www.csswinner.com/contact">Contact Us</a><span>•</span> <a href="https://www.csswinner.com/gallery">Archives</a><span>•</span> <a href="https://www.csswinner.com/privacy-policy">Terms</a><span>•</span> <a href="https://www.csswinner.com/submitsite">Submit</a><span>•</span> <a href="https://www.csswinner.com/certificate">Certificate</a> </nav>
-    <div class="footer-note">
-      <h2>CSS Winner is a unique global platform awarding and showcasing the best websites and promoting innovative web designers, developers and agencies.</h2>
-    </div>
-  </div>
-  <div class="f-bottom">
-    <div class="wrapper">
-      <div class="f-align"> <span class="copyright">© 2010 - 2020 CSS Winner</span>
-        <ul class="f-social">
-          <li><a href="https://twitter.com/csswinner" class="twitter" target="_blank"></a></li>
-          <li><a href="https://www.facebook.com/csswinners" class="facebook" target="_blank"></a></li>
-          <li><a href="https://www.pinterest.com/csswinner" class="pinterest" target="_blank"></a></li>
-        </ul>
-      </div>
-    </div>
-  </div>
+<div class="w3-container w3-black w3-center w3-opacity w3-padding-64">
+    <h1 class="w3-margin w3-xlarge">Quote of the day: live life</h1>
+</div>
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-64 w3-center w3-opacity">  
+  <div class="w3-xlarge w3-padding-32">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+ </div>
+ <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
 </footer>
-<script type="text/javascript" src="https://cdn.csswinner.com/js/jquerymin.js"></script>
-<script type="text/javascript" src="https://cdn.csswinner.com/js/all.js"></script> 
-<!-- BuySellAds.com Ad Code --> 
-<script type="text/javascript">
-(function(){
-  var bsa = document.createElement('script');
-     bsa.type = 'text/javascript';
-     bsa.async = true;
-     bsa.src = 'https://s3.buysellads.com/ac/bsa.js';
-  (document.getElementsByTagName('head')[0]||document.getElementsByTagName('body')[0]).appendChild(bsa);
-})();
-</script> 
-<!--Google Analytics --> 
-<script type="text/javascript">
-var _gaq = _gaq || [];
-	_gaq.push(['_setAccount', 'UA-19711557-1']);
-	_gaq.push(['_trackPageview']);	
-	(function() {
-	var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-	ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-	var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-})();
+
+<script>
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
 </script>
-<iframe style="display: none;"></iframe></body>
+
+</body>
+</html>

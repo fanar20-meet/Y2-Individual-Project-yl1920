@@ -9,8 +9,8 @@ class User(Base):
     __tablename__ = 'user'
     user_id = Column(Integer,primary_key=True)
     name = Column(String)
-    year= Column(Integer)
-
+    year= Column(String)
+    num =Column(Integer)
 
 
     def __repr__(self):
