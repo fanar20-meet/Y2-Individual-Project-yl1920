@@ -7,7 +7,7 @@ Base = declarative_base()
 
 class User(Base):
     __tablename__ = 'user'
-    user_id = Column(Integer,primary_key=True)
+    id = Column(Integer,primary_key=True)
     name = Column(String)
     year= Column(String)
     num =Column(Integer)
